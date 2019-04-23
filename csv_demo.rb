@@ -18,11 +18,3 @@ CSV.open(filepath, 'ab', csv_options) do |csv|
   csv << ['Gambrinus', 'Pale', 'Czechia']
   # ...
 end
-
-
-
-
-
-
-
-

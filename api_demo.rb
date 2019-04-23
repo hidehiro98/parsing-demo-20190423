@@ -1,5 +1,9 @@
 require 'json'
 require 'open-uri'
 
-# TODO - Let's fetch name and bio from a given GitHub username
-url = 'https://api.github.com/users/ssaunier'
+url = 'https://api.github.com/users/dmbf29/repos'
+
+repos_serialized = open(url).read
+repos = JSON.parse(repos_serialized)
+
+p repos[0]['name']
